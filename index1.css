@@ -1,46 +1,47 @@
+/* Group Selectors
 
-/* Pseudo Element*/
+(p) --> tüm p etiketleri
 
-p::first-line{
-    font-weight: bold;
-    color:darkred;
-    word-spacing: 2px;
-    letter-spacing: 2 px;
+(div p) --> div içerisindeki tüm p etiketleri
+
+(div,p) --> Tüm div ve tüm p etiketleri
+
+(p + div) --> p etiketinden sonra gelen div etiketi
+
+*/
+
+/* p{
+    color: red;
+} */
+
+/* div p{
+    color: red;
+} */
+
+/* .container{
+    color: royalblue;
+} */
+
+/* .container div{
+    color: royalblue;
 }
+.container div p{
+    color: royalblue;
+} */
 
-p::first-letter{
-    font-size: 50px;
+/* div,p {
+    color: red;
 }
-
-
-/* Pseudo Class*/
-
-ul li{
-    padding:10px;
-    margin-bottom: 10px;
+div {
+    color:red;
 }
+p{
+    color: red;
+} */
 
-ul li:first-child{
-    background-color: darkseagreen;
+/* p + div{
+    color: red;
 }
-
-ul li:last-child{
-    background-color: deepskyblue;
-}
-
-a:visited{
-    color:fuchsia,
-}
-
-a:hover{
-    color:white;
-    background: lightblue;
-}
-
-a{
-    padding:5px 10px;
-    text-decoration: none;
-    display: block;
-    width: 100px;
-    margin-bottom: 10px;
-}
+div + p{
+    color: red;
+} */

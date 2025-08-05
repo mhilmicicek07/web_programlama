@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Images</title>
     <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .kutu {
+            /* width: 250px; */
+            width: 25%;
+            background: lightskyblue;
+            float: left;
+            border: 1px solid black;
+        }
 
-        img{
+        @media screen and (max-width:900px) {
+            .kutu {
+                width: 33.33%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .kutu {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .kutu {
+                width: 100%;
+            }
+        }
+        
+        img {
+            width: 100%;
+            /* max-width: 100%; */
+            /* height: auto; */
+        }
+
+        .tekresim {
             max-width: 100%;
             height: auto;
         }
-
-
     </style>
 </head>
+
 <body>
 
-    <img src="images/manzara02.jpg" alt="" width="500">
     
+    <div class="kutu">
+        <img src="images/manzara02.jpg" alt="">
+    </div>
+    <div class="kutu">
+        <img src="images/manzara02.jpg" alt="">
+    </div>
+    <div class="kutu">
+        <img src="images/manzara02.jpg" alt="">
+    </div>
+    <div class="kutu">
+        <img src="images/manzara02.jpg" alt="">
+    </div>
+    <div class="kutu">
+        <img src="images/manzara02.jpg" alt="">
+    </div>
+    
+    
+    <img class="tekresim" src="images/manzara02.jpg" alt="" width="500">
+
+
 </body>
+
 </html>
