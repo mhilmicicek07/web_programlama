@@ -77,6 +77,8 @@ header h1 {
     color: #333;
 }
 
+/* HEADER KISMI*/
+
 /* MAIN KISMI */
 
 #section-a {
@@ -103,6 +105,8 @@ header h1 {
     padding: 1.5rem;
 }
 
+/* MAIN KISMI */
+
 /* FOOTER KISMI */
 
 #section-c {
@@ -127,6 +131,8 @@ footer {
 footer a {
     color: yellowgreen;
 }
+
+/* FOOTER KISMI */
 
 /* Mobil ekran görünümünden PC ekran görünümüne doğru geliştirme yapıldı */
 
@@ -158,3 +164,5 @@ footer a {
     }
 
 }
+
+/* RESPONSIVE BREAKPOINTS */
