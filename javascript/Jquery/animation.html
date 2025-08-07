@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <style>
+        #box{
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button id="animate">Animasyon</button>
+
+    <div id="box">
+
+    </div>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#animate").click(function(){
+                $("#box").animate(
+                    {
+                        left:"200px",
+                        width:"300px",
+                        height:"300px",
+                    },
+                    3000
+                )
+                $("#box").animate({top:"200px",width:"1px",height:"1px"},2000);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

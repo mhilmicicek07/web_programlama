@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body>
+
+    <form>
+
+        <p>
+            Ad: <input class="control" type="text">
+        </p>
+
+        <p>
+            Öğrenim Durumunuz: <select class="control">
+                <option value="ilkokul">ilkokul</option>
+                <option value="ortaokul">ortaokul</option>
+                <option value="lise">lise</option>
+                <option value="üniversite">üniversite</option>
+            </select>
+        </p>
+
+
+    </form>
+
+
+
+
+    <script>
+
+        $(document).ready(function(){
+            $(".control").change(function(){
+                // console.log("change calisti");
+                console.log($(this).val());
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>

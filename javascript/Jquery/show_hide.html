@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+</head>
+
+<body>
+
+    <p>Sifirdan Ileri Düzey Web Gelistirme</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide(2000);
+            });
+
+            $("#show").click(function(){
+                $("p").show(2000, function(){
+                    alert("paragraf gosterildi");
+                });
+            });
+            $("#toggle").click(function(){
+                $("p").toggle("fast");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

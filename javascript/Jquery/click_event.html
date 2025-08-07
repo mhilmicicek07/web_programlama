@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>
+    
+        .paragrafrenklendir{
+            color: purple;
+            font-size: 22px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+        <p id="p1">Sifirdan Ileri Düzey Web Gelistirme</p>
+
+        <p id="p2">Sifirdan Ileri Düzey Web Gelistirme</p>
+
+        <p class="paragraf">Sifirdan Ileri Düzey Web Gelistirme</p>
+
+        <p class="paragraf">Sifirdan Ileri Düzey Web Gelistirme</p>
+
+    <script>
+
+        $(document).ready(function(){
+            $(".paragraf").click(function(){
+                // console.log("paragrafa tiklandi");
+                $(this).addClass("paragrafrenklendir");
+            });
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>

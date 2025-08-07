@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <a href="#">Link1</a>
+    <h3 id="header">Kurslarim</h3>
+    <ul id="liste">
+        <li class="item1">Sifirdan Ileri Duzey Web Geliştirme</li>
+        <li>PHYTON - Sifirdan Uzman Seviyesine Programlama <a href="#">Link2</a></li>
+        <li>Android ve iOS Mobil Uygulama Geliştirme : Dart & Flutter</li>
+    </ul>
+
+    <script>
+
+        //document.getElementById("header").style.color="blue";
+        
+        $("#header").css("color","orange");
+
+        //$("#liste a").css("text-decoration","none");
+
+        $("a").css("text-decoration","none");
+
+        var styles ={
+            color:"blue",
+            fontSize:"22px",
+            border:"1px solid gray",
+        }
+        $("ul li").css(styles);
+
+        var listeler = document.querySelectorAll("li");
+
+        for(var i=0; i<listeler.length; i++){
+            listeler[i].style.color="red";
+        }
+
+        $("a").css({
+            color:"green",
+            fontSize:"16px",
+            border:"2px solid blue",
+        });
+
+
+
+    </script>
+</body>
+
+</html>

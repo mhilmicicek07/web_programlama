@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+</head>
+
+<body>
+
+    <div>
+    <p>Sifirdan Ileri Düzey Web Gelistirme</p>
+
+    <img src="03.jpg" width="150px">
+
+    </div>
+
+    <br>
+
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="toggle">Slide Toggle</button>
+
+    <br><br>
+
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadeto">Fade To</button>
+    <button id="toggle2">Fade Toggle</button>
+
+    <script>
+        // $(document).ready(function(){
+        //     $("#slideup").click(function(){
+        //         $("div").slideUp(3000);
+        //     });
+
+        //     $("#slidedown").click(function(){
+        //         $("div").slideDown(1000, function(){
+        //             alert("div gosterildi");
+        //         });
+        //     });
+        //     $("#toggle").click(function(){
+        //         $("div").slideToggle("slow");
+        //     });
+        // });
+
+        $(document).ready(function(){
+            $("#fadein").click(function(){
+                $("div").fadeIn("slow");
+            });
+
+            $("#fadeout").click(function(){
+                $("div").fadeOut(1000, function(){
+                    alert("div gizlendi");
+                });
+            });
+
+            $("#fadeto").click(function(){
+                $("div").fadeTo("slow", 0.5);
+                });
+
+            $("#toggle2").click(function(){
+                $("div").fadeToggle("slow");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
