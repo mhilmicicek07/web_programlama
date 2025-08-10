@@ -1,27 +1,55 @@
-// Tarayıcı Depolama Alanları
+// //! Tarayıcı Depolama Alanları
 
-// Local Storage
+// //? Session Storage -> örneğin tarayıcı/oturum açıldıktan kapatılana kadar veriler tarayıcıya kaydedilir
+
+// const add = document.querySelector("#add");
+// const del = document.querySelector("#delete");
+// const clear = document.querySelector("#clear");
+
+// const addkey = document.querySelector("#addkey");
+// const addvalue = document.querySelector("#addvalue");
+// const deletekey = document.querySelector("#deletekey");
+
+// function addItem(e){
+//     sessionStorage.setItem(addkey.value, addvalue.value)
+// }
+
+// function deleteItem(e){
+//     sessionStorage.removeItem(deletekey.value)
+// }
+
+// function clearItem(e) {
+//     sessionStorage.clear();
+// }
+
+// add.addEventListener("click",addItem);
+// del.addEventListener("click",deleteItem);
+// clear.addEventListener("click",clearItem);
 
 
-// SetItem Metodu(Veri Eklemek için)
+// //? Local Storage -> oturumdan bağımsız bir şekilde veriler tarayıcıya kaydedilir
 
-localStorage.setItem("programlama","javascript");
-localStorage.setItem("bilgisayar",7000);
+// //* SetItem Metodu(Veri Eklemek için)
 
-// GetItem Fonksiyonu(Veriye Ulaşmak için)
+// localStorage.setItem("programlama", "javascript");
+// localStorage.setItem("bilgisayar", 7000);
+
+// //* GetItem Fonksiyonu(Veriye Ulaşmak için)
 
 // const value = localStorage.getItem("bilgisayar");
-// console.log(value);
-// console.log(typeof value);
+// console.log(value); // 7000
+// console.log(typeof value); // string
 
-// Clear Local Storage Fonksiyonu(Veriyi Temizlemek için)
+// //* Clear Local Storage Fonksiyonu(Veriyi Temizlemek için)
 
 // localStorage.clear();
 
-// console.log(localStorage.getItem("klavye"));
+// //* Local Storage da arama yapmak için
 
-if(localStorage.getItem("bilgisayar") === null){
-    console.log("Sorgulanan Veri Bulunamadi!");
-}else{
-    console.log("Sorgulanan Veri Bulundu!");
-}
+// console.log(localStorage.getItem("klavye")); // yoksa null olarak döner
+
+// if (localStorage.getItem("klavye") === null) {
+//     console.log("Sorgulanan Veri Bulunamadi!");
+// } else {
+//     console.log("Sorgulanan Veri Bulundu!");
+// }
