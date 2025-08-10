@@ -924,8 +924,79 @@
 
 // console.log(window.document) // #document (file:///C:/Users/MeHMeTHiLMi/Desktop/web_programlama/javascript/index.html) sitenin kodlarını barındırır
 
-//! SCOPE KAVRAMI
+// //! SCOPE (KAPSAM) KAVRAMI
 
+// //? Global Scope
+
+// var veri1 = 5; //* Global Scope
+// let veri2 = 10; //* Global Scope
+// const veri3 = 15; //* Global Scope
+// console.log(veri1,veri2,veri3) // 5 10 15
+
+// //? Function Scope(ÖNCELİKLİ GLOBAL'E GÖRE)
+
+// function a() {
+//     //* Function Scope
+// }
+
+// function fonksiyon(){
+//     var veri1 = 30; //* Function Scope
+//     let veri2 = 40; //* Function Scope
+//     const veri3 = 50; //* Function Scope
+//     console.log(veri1,veri2,veri3); // 30 40 50
+// }
+
+// fonksiyon();
+
+// console.log(veri1,veri2,veri3) // 5 10 15
+
+// //? Block Scope(ÖNCELİKLİ GLOBAL'E GÖRE)
+
+// if (true) {
+//     //* Block Scope
+// }
+
+// if (true) {
+//     var a = 10;
+//     let b = 20;
+//     const c= 30;
+// }
+
+// console.log(a) // 10
+// console.log(b) // undefined hatası
+// console.log(c) // undefined hatası
+
+// //! block içerisinde var ile değişken tanımlandıysa globalde de etkisini göstermeye devam eder. tercih edilmez.
+
+// var veri1 = 5; //* Global Scope
+// let veri2 = 10; //* Global Scope
+// const veri3 = 15; //* Global Scope
+// console.log(veri1,veri2,veri3) // 5 10 15
+
+// if (true) {
+//     var veri1 = 30;
+//     let veri2 = 40;
+//     const veri3= 50;
+//     console.log(veri1,veri2,veri3) // 30 40 50
+// }
+
+// //! block içerisinde var ile değişken tanımlandıysa globalde de etkisini göstermeye devam eder. tercih edilmez.
+// console.log(veri1,veri2,veri3) // 30 10 15
+
+
+// var admin_password = "1111111";
+// let admin_password = "1111111";
+// const admin_password = "1111111";
+
+// if (true){
+    // var admin_password = "2222222";
+    // let admin_password = "2222222";
+//     const admin_password = "2222222";
+// }
+
+// console.log(admin_password) //2222222
+// console.log(admin_password) //1111111 let ile tanımlanması durumunda
+// console.log(admin_password) //1111111 const ile tanımlanması durumunda
 
 
 
