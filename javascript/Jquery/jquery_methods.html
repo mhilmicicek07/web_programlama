@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -5,13 +6,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
         integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <style>     
+
+    <style>
         /* add class metodu */
-        .highlight{
+        .highlight {
             background-color: gray;
         }
-        .orange{
+
+        .orange {
             background-color: orange;
         }
     </style>
@@ -26,12 +28,12 @@
         <li>PHYTON - Sifirdan Uzman Seviyesine Programlama <a href="#">Link2</a></li>
         <li>Android ve iOS Mobil Uygulama Geliştirme : Dart & Flutter</li>
     </ul>
-    
-    
+
+
     <!-- attribute metodu -->
     <img src="03.jpg" width="200">
-    
-        <!-- // val(değer alma) metodu -->
+
+    <!-- val(değer alma) metodu -->
     <input id="ad" type="text" placeholder="Adiniz">
     <input id="soyad" type="text" placeholder="Soyadiniz">
     <button id="btnKayitOl" onclick="kayitOl();">Kayit Ol</button>
@@ -43,13 +45,13 @@
         // console.log($("ul li").text());
 
         $("h3").text("Udemy Kurslarim"); // var olanı değiştirmek
-        
-        // val metodu
-        function kayitOl(){
-            var ad = $("#ad").val();
-            var soyad=$("#soyad").val();
 
-            console.log(ad+" "+soyad+" "+"kursa kayit oldu!");
+        // val metodu
+        function kayitOl() {
+            var ad = $("#ad").val();
+            var soyad = $("#soyad").val();
+
+            console.log(ad + " " + soyad + " " + "kursa kayit oldu!");
             // add class metodu
             // $("#ad").addClass("highlight");
             // $("#soyad").addClass("orange");
@@ -58,10 +60,11 @@
             // remove class metodu(var olanı silme)
             $("#ad").addClass("highlight");
             $("#ad").removeClass("highlight");
+            // $("img").attr("width", "350");
         }
 
         // attribute metodu
-        $("img").attr("width","350");
+        $("img").attr("width", "350");
 
 
 
