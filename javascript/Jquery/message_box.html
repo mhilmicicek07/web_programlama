@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -5,50 +6,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
         integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+        </script>
 
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
         }
 
-        #message-box{
+        #message-box {
             background-color: darkcyan;
             text-align: center;
             color: white;
         }
 
-        #header{
+        #header {
             cursor: pointer;
             height: 20px;
             padding: 10px;
             border-bottom: 1px solid white;
         }
 
-        #content{
+        #content {
             height: 200px;
             padding: 10px;
             display: none;
         }
 
-        #close{
+        #close {
             float: right;
         }
 
-        #close:hover{
-            color:grey;
+        #close:hover {
+            color: grey;
         }
-
     </style>
 
     <script>
 
-        $(function(){
-            $("#header").click(function(){
+        $(function () { // ready özelliğinin kısa versiyonu
+            $("#header").click(function () {
                 $("#content").toggle("slow");
             });
-            $("#close").click(function(){
+            $("#close").click(function () {
                 $("#message-box").hide("slow");
             });
         });
@@ -63,7 +63,7 @@
 
         <div id="header">
 
-            <span id="close">X</span>Mesajiniz var
+            <span id="close"> X </span>Mesajınız Var !
 
         </div>
 
